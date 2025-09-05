@@ -1,75 +1,222 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CV – Prénom Nom | Développeur Web & Web Mobile</title>
-  <link rel="stylesheet" href="assets/fonts/fonts.css">
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Polices centralisées dans assets/fonts/fonts.css -->
+  <link rel="stylesheet" href="assets/fonts/fonts.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <div class="page">
+    <!-- Bandeau -->
     <header class="header">
       <div class="header__inner">
+        <a class="avatar-link" href="assets/images/profil.jpg" target="_blank" rel="noopener">
+          <img class="avatar" src="assets/images/profil.jpg" alt="Photo de Prénom Nom" />
+        </a>
+
         <div class="id-block">
           <h1 class="name"><span>Prénom</span> <span>Nom</span></h1>
-          <p class="role">Développeur Web & Web Mobile</p>
-          <ul class="contact">
-            <li>Email</li>
-            <li>Téléphone</li>
-            <li>Adresse</li>
+          <p class="role">Développeur Web et Web Mobile</p>
+
+          <ul class="contact" role="list">
+            <li>
+              <a href="mailto:nom.prenom@email.tld" class="contact__item" aria-label="Envoyer un e-mail">
+                Mail
+              </a>
+            </li>
+            <li>
+              <a href="tel:+33000000000" class="contact__item" aria-label="Appeler par téléphone">
+                Téléphone
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com/maps/place/Adresse+Ville" target="_blank" rel="noopener" class="contact__item" aria-label="Voir l'adresse sur Google Maps">
+                Adresse
+              </a>
+            </li>
+            <li>
+              <span class="contact__item" aria-label="Permis B">
+                Permis B
+              </span>
+            </li>
           </ul>
         </div>
       </div>
     </header>
 
+    <!-- Corps -->
     <main class="main">
+      <!-- Colonne gauche -->
       <aside class="sidebar">
         <section class="box">
-          <h2>Compétences</h2>
-          <ul class="skills">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
+          <h2 class="h2">Compétences</h2>
+          <ul class="skills" role="list">
+            <li><span>HTML</span><span class="stars" aria-label="niveau 5 sur 5">★★★★☆</span></li>
+            <li><span>CSS</span><span class="stars" aria-label="niveau 4 sur 5">★★★★☆</span></li>
+            <li><span>Javascript</span><span class="stars" aria-label="niveau 3 sur 5">★★☆☆☆</span></li>
+            <li><span>PHP</span><span class="stars" aria-label="niveau 2 sur 5">★☆☆☆☆</span></li>
           </ul>
         </section>
 
         <section class="box">
-          <h2>Langues</h2>
-          <ul class="list-plain">
-            <li>Français</li>
-            <li>Anglais</li>
+          <h2 class="h2">Langues</h2>
+          <ul class="list-plain" role="list">
+            <li><strong>Français</strong> Langue maternelle</li>
+            <li><strong>Anglais</strong> Professionnel</li>
+            <li><strong>Allemand</strong> Notions</li>
+          </ul>
+        </section>
+
+        <section class="box">
+          <h2 class="h2">Qualités</h2>
+          <ul class="bullets" role="list">
+            <li>Esprit d’équipe</li>
+            <li>Autonomie</li>
+            <li>Organisation</li>
+            <li>Créativité</li>
+          </ul>
+        </section>
+
+        <section class="box">
+          <h2 class="h2">Centres d’intérêt</h2>
+          <ul class="bullets" role="list">
+            <li>Yoga</li>
+            <li>Tennis</li>
+            <li>Écologie</li>
           </ul>
         </section>
       </aside>
 
+      <!-- Colonne droite -->
       <section class="content">
         <section class="box">
-          <h2>Profil</h2>
-          <p>Texte de présentation...</p>
+          <h2 class="h2">Profil</h2>
+          <p class="profil">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloribus iste cumque odio! Sed voluptatum
+            quidem quam aut voluptatem, consequuntur sunt repellendus porro eaque unde deleniti dicta perferendis magni
+            debitis dolorem atque vitae voluptas.
+          </p>
+          <p class="profil">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, consequuntur sunt repellendus porro
+            eaque unde deleniti dicta perferendis magni debitis dolorem atque vitae voluptas. Cum magni doloribus eius tenetur!
+          </p>
         </section>
 
         <section class="box">
-          <h2>Formations</h2>
-          <ul class="timeline">
-            <li>Formation 1</li>
-            <li>Formation 2</li>
+          <h2 class="h2">Formations</h2>
+          <ul class="timeline" role="list">
+            <li class="tl-item">
+              <div class="tl-main">
+                <div class="tl-title">
+                  <strong>Titre Professionnel DWWM</strong>
+                  <span class="school"><em>Centre Européen de Formation</em></span>
+                </div>
+                <span class="tl-date">2023–2024</span>
+              </div>
+            </li>
+            <li class="tl-item">
+              <div class="tl-main">
+                <div class="tl-title">
+                  <strong>Remise à Niveau – Métiers du numérique</strong>
+                  <span class="school"><em>Lycée de la ville</em></span>
+                </div>
+                <span class="tl-date">Juin 2023 – Septembre 2023</span>
+              </div>
+            </li>
+            <li class="tl-item">
+              <div class="tl-main">
+                <div class="tl-title">
+                  <strong>Baccalauréat</strong>
+                  <span class="school"><em>Lycée de la ville</em></span>
+                </div>
+                <span class="tl-date">1983</span>
+              </div>
+            </li>
           </ul>
         </section>
 
         <section class="box">
-          <h2>Expériences</h2>
-          <ul class="timeline">
-            <li>Expérience 1</li>
-            <li>Expérience 2</li>
+          <h2 class="h2">Stages</h2>
+          <ul class="timeline" role="list">
+            <li class="tl-item">
+              <div class="tl-main">
+                <div class="tl-title">
+                  <strong>Gestionnaire de paye</strong>
+                  <span class="school"><em>Société Truc &amp; Machin</em></span>
+                </div>
+                <span class="tl-date">Mars 2022 – Avril 2022</span>
+              </div>
+            </li>
+            <li class="tl-item">
+              <div class="tl-main">
+                <div class="tl-title">
+                  <strong>Agent d’accueil</strong>
+                  <span class="school"><em>Mairie de la ville</em></span>
+                </div>
+                <span class="tl-date">Janvier 2021 – Février 2021</span>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="box">
+          <h2 class="h2">Expérience professionnelle</h2>
+          <ul class="timeline" role="list">
+            <li class="tl-item">
+              <div class="tl-main">
+                <div class="tl-title">
+                  <strong>Agent d’accueil</strong>
+                  <span class="school"><em>Mairie de la ville</em></span>
+                </div>
+                <span class="tl-date">Mars 2021 – Juillet 2021</span>
+              </div>
+            </li>
+            <li class="tl-item">
+              <div class="tl-main">
+                <div class="tl-title">
+                  <strong>Chauffeur – Livreur</strong>
+                  <span class="school"><em>Transport Martin &amp; Fils</em></span>
+                </div>
+                <span class="tl-date">Septembre 2021 – Décembre 2021</span>
+              </div>
+            </li>
+            <li class="tl-item">
+              <div class="tl-main">
+                <div class="tl-title">
+                  <strong>Préparateur de commandes</strong>
+                  <span class="school"><em>Le Shop Français</em></span>
+                </div>
+                <span class="tl-date">Janvier 2000 – Septembre 2000</span>
+              </div>
+            </li>
           </ul>
         </section>
       </section>
     </main>
 
+   
     <footer class="footer">
-      <p>© Prénom Nom</p>
+      <div class="footer__inner">
+        <nav class="socials" aria-label="Réseaux sociaux">
+          <a class="social" href="https://www.linkedin.com/in/..." target="_blank" rel="noopener" aria-label="LinkedIn">
+            <img src="assets/img/icons/linkedin.svg" alt="" />
+          </a>
+          <a class="social" href="https://github.com/..." target="_blank" rel="noopener" aria-label="GitHub">
+            <img src="assets/img/icons/github.svg" alt="" />
+          </a>
+          <a class="social" href="https://x.com/..." target="_blank" rel="noopener" aria-label="X (Twitter)">
+            <img src="assets/img/icons/twitter.svg" alt="" />
+          </a>
+        </nav>
+        <p class="updated">
+          Mis à jour le : <span id="maj">JJ/MM/AAAA</span>
+        </p>
+      </div>
     </footer>
   </div>
+
 </body>
 </html>
